@@ -1,8 +1,7 @@
 import { Church, LockKeyhole, User } from "lucide-react";
 import { Button } from "./buttons/button";
-import { FigurasLucide, Inputs } from "./inputs/style-inputs";
-import { DivDePosicionamento, DivTitulo, SessaoPrincipalLogin, Titulo } from "./style-login";
-
+import { InputContainer, Inputs, IconContainer } from "./inputs/style-inputs";
+import { DivDePosicionamento, DivTitulo, SessaoPrincipalLogin, Titulo, Subtitulo } from "./style-login";
 
 export default function TelaDeLogin() {
   return (
@@ -10,20 +9,26 @@ export default function TelaDeLogin() {
       <DivDePosicionamento>
         <DivTitulo>
           <Titulo>
-            <Church/>
+            <Church size={32}/>
             Bethesda Prise
           </Titulo>
-          <h4 >App de finanças do M. de louvor</h4>
+          <Subtitulo>App de finanças do M. de louvor</Subtitulo>
         </DivTitulo>
-        <FigurasLucide>
-          <User />
+        
+        <InputContainer>
+          <IconContainer>
+            <User />
+          </IconContainer>
           <Inputs type="text" placeholder='Digite o usuário' required />
-        </FigurasLucide>
+        </InputContainer>
 
-        <FigurasLucide>
-          <LockKeyhole  />
+        <InputContainer>
+          <IconContainer>
+            <LockKeyhole />
+          </IconContainer>
           <Inputs type="password" placeholder='Digite sua senha' required />
-        </FigurasLucide>
+        </InputContainer>
+        
         <Button>Entrar no app</Button>
       </DivDePosicionamento>
     </SessaoPrincipalLogin>
