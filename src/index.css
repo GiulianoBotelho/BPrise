@@ -16,10 +16,11 @@
   --button-background: #1e56a0;
   --button-hover-background: #163172;
   --button-text: #fff;
-  --input-background: #fff; 
-  --input-placeholder: #7a7a7a; 
+  --input-background: #fff;
+  --input-placeholder: #7a7a7a;
   --input-border: #1e56a0; 
 }
+
 
 
 
@@ -29,23 +30,3 @@ body{
   background: #222831;
   color:#f2f2f2 ;
 }
-/* 
-.first-color { 
-	background: #222831; 
-}
-	
-.second-color { 
-	background: #393e46; 
-}
-
-.third-color { 
-	background: #f96d00; 
-}
-
-.fourth-color { 
-	background: #f2f2f2; 
-} */
-
-/* TEXTO AUXILIAR:#c5c5c5 */
-
-/* PRINCIPAL #f2f2f2 */

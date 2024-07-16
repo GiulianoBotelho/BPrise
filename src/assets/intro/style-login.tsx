@@ -4,9 +4,10 @@ export const SessaoPrincipalLogin = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   height: 100vh;
   background-color: var(--background-main);
+  padding: 20px; 
+  
 `;
 
 export const DivDePosicionamento = styled.div`
@@ -14,11 +15,12 @@ export const DivDePosicionamento = styled.div`
   flex-direction: column;
   gap: 20px;
   text-align: center;
-  background-color: var(--background-modal);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  width: 350px;
-  padding: 40px 20px;
+  width: 100%;
+  max-width: 450px; 
+  padding: 20px;
   border-radius: 0.5rem;
+  background-color: var(--background-main);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 `;
 
 export const Titulo = styled.h1`
