@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const BotaoEstilo = styled.button`
   width: 100%;
   padding: 15px;
   background-color: var(--button-background);
@@ -12,4 +12,18 @@ export const Button = styled.button`
   &:hover {
     background-color: var(--button-hover-background);
   }
-`;
+`
+
+interface ButtonProps{
+  onClick: (e:React.MouseEvent<HTMLButtonElement>) => void
+  children:string;
+}
+
+
+export default function Button({ onClick, children}:ButtonProps) {
+  return (
+   <BotaoEstilo onClick={onClick}>
+        {children}
+   </BotaoEstilo>
+  )
+}
