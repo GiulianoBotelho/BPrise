@@ -1,6 +1,6 @@
-import { Church, LockKeyhole, User, X } from "lucide-react";
+import { Church, LockKeyhole, User } from "lucide-react";
 import Button from "./buttons/button";
-import { InputContainer, Inputs, IconContainer } from "./inputs/style-inputs";
+import { InputContainer, IconContainer } from "./inputs/style-inputs";
 import { DivDePosicionamento, DivTitulo, SessaoPrincipalLogin, Titulo, Subtitulo } from "./style-login";
 import InputDeLogin from "./inputs/inputs";
 import { useState } from "react";
