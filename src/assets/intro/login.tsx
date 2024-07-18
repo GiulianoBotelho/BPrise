@@ -18,8 +18,11 @@ export default function TelaDeLogin() {
   }
   const Submit = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
-    if (password === '') {
+    if (password === '' || username === '') {
       setIsOpen(true)
+      setInterval(() =>{
+        setIsOpen(false)
+      },4000)
     }
     console.log('username:', username)
     console.log('password:', password)
@@ -31,9 +34,9 @@ export default function TelaDeLogin() {
   return (
     <SessaoPrincipalLogin>
       <ModalDeVerificacao onClose={closeModal} show={isOpen}>
-        <p>
-          Preencha sua senha
-        </p>
+     
+          Preencha seus dados corretamente!
+       
       </ModalDeVerificacao>
       <DivDePosicionamento>
         <DivTitulo>
