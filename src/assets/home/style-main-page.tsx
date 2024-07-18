@@ -1,8 +1,19 @@
 import styled from "styled-components";
-
+import { BotaoEstilo } from "../intro/buttons/button";
 
 export const CorpoPrincipal = styled.main`
 min-height: 90vh;
+text-align: center;
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+`
+export const SessaoDeSaque = styled.section`
+display: flex;
+align-items: center;
+flex-direction: column;
 `
 export const Rodape = styled.footer`
 min-height: 10vh;
@@ -16,4 +27,8 @@ background-color: #f1f1f1;
 :hover{
     margin-bottom: 8px;
 }
+`
+
+export const BotaoDaMain = styled(BotaoEstilo)`
+width: 100px;
 `
