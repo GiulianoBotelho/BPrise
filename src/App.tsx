@@ -1,5 +1,6 @@
 
 import TelaDeLogin from './assets/intro/login'
+import Rotas from './router'
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
 
   return (
    <>
-   <TelaDeLogin/>
+   <Rotas/>
    </>
   )
 }
