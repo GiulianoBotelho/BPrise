@@ -60,7 +60,7 @@ export default function TelaDeLogin() {
           </IconContainer>
           <InputDeLogin onChange={LeituraDoInputPassword} type='password' placeholder="Digite sua senha" />
         </InputContainer>
-        <Button onClick={Submit}>Entrar</Button>
+        <Button  onClick={Submit}>Entrar</Button>
 
       </DivDePosicionamento>
     </SessaoPrincipalLogin>
